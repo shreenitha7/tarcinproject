@@ -1,0 +1,159 @@
+.about-container {
+  margin-top: 80px;
+  padding: 2rem;
+  min-height: calc(100vh - 80px);
+  background-color: var(--bg-primary);
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 4rem;
+  padding: 3rem 0;
+  background: var(--bg-tertiary);
+  border-radius: 12px;
+}
+
+.about-header h1 {
+  color: var(--text-primary);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.about-header p {
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.about-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-section {
+  margin-bottom: 4rem;
+}
+
+.about-section h2 {
+  color: var(--text-primary);
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.about-section p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  font-size: 1.1rem;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.feature-card {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px var(--shadow-color);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card h3 {
+  color: var(--text-primary);
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.feature-card p {
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.step-card {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px var(--shadow-color);
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-5px);
+}
+
+.step-number {
+  background: var(--accent-gradient);
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 auto 1.5rem;
+}
+
+.step-card h3 {
+  color: var(--text-primary);
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.step-card p {
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    padding: 1rem;
+  }
+  
+  .about-header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .about-header p {
+    font-size: 1.1rem;
+  }
+  
+  .about-section h2 {
+    font-size: 1.75rem;
+  }
+  
+  .features-grid,
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .feature-card,
+  .step-card {
+    padding: 1.5rem;
+  }
+} 
